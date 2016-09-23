@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ty-1n-MOl"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-bM-Ys5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-bM-Ys5">
                                 <frame key="frameInset" minX="28" minY="257" width="51" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -43,17 +43,15 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="iit-lw-YJL" secondAttribute="leading" id="07v-mw-qwn"/>
-                            <constraint firstItem="ezg-bM-Ys5" firstAttribute="top" secondItem="iit-lw-YJL" secondAttribute="bottom" constant="219" id="4oO-aq-Iso"/>
-                            <constraint firstItem="ezg-bM-Ys5" firstAttribute="leading" secondItem="iit-lw-YJL" secondAttribute="leading" constant="15" id="85e-PC-SKe"/>
                             <constraint firstItem="2ty-1n-MOl" firstAttribute="centerX" secondItem="iit-lw-YJL" secondAttribute="centerX" id="B4t-KQ-jNK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ezg-bM-Ys5" secondAttribute="trailing" constant="15" id="BBn-M3-WSN"/>
+                            <constraint firstItem="ezg-bM-Ys5" firstAttribute="width" secondItem="GFF-Wr-8sG" secondAttribute="width" id="RH8-fv-AHd"/>
                             <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="ROS-cD-i1q"/>
                             <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="Vnf-2V-rTF"/>
                             <constraint firstItem="2ty-1n-MOl" firstAttribute="width" secondItem="iit-lw-YJL" secondAttribute="width" id="Xcr-ns-VTU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iit-lw-YJL" secondAttribute="trailing" id="Z2j-rJ-feS"/>
                             <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="frm-oz-xVU"/>
                             <constraint firstItem="GFF-Wr-8sG" firstAttribute="top" secondItem="2ty-1n-MOl" secondAttribute="bottom" constant="8" id="sBD-wb-nsh"/>
-                            <constraint firstItem="GFF-Wr-8sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDg-V2-zpw"/>
+                            <constraint firstItem="GFF-Wr-8sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="sDg-V2-zpw"/>
                             <constraint firstItem="2ty-1n-MOl" firstAttribute="top" secondItem="iit-lw-YJL" secondAttribute="bottom" constant="8" id="xyi-m2-DWz"/>
                         </constraints>
                         <connections>
