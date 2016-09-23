@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFF-Wr-8sG">
+                                <frame key="frameInset" minX="112" minY="90" width="139" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content per Beer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iit-lw-YJL">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ty-1n-MOl"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-bM-Ys5">
+                                <frame key="frameInset" minX="28" minY="257" width="51" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="iit-lw-YJL" secondAttribute="leading" id="07v-mw-qwn"/>
+                            <constraint firstItem="ezg-bM-Ys5" firstAttribute="top" secondItem="iit-lw-YJL" secondAttribute="bottom" constant="219" id="4oO-aq-Iso"/>
+                            <constraint firstItem="ezg-bM-Ys5" firstAttribute="leading" secondItem="iit-lw-YJL" secondAttribute="leading" constant="15" id="85e-PC-SKe"/>
+                            <constraint firstItem="2ty-1n-MOl" firstAttribute="centerX" secondItem="iit-lw-YJL" secondAttribute="centerX" id="B4t-KQ-jNK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ezg-bM-Ys5" secondAttribute="trailing" constant="15" id="BBn-M3-WSN"/>
+                            <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="ROS-cD-i1q"/>
+                            <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="Vnf-2V-rTF"/>
+                            <constraint firstItem="2ty-1n-MOl" firstAttribute="width" secondItem="iit-lw-YJL" secondAttribute="width" id="Xcr-ns-VTU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iit-lw-YJL" secondAttribute="trailing" id="Z2j-rJ-feS"/>
+                            <constraint firstItem="iit-lw-YJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="frm-oz-xVU"/>
+                            <constraint firstItem="GFF-Wr-8sG" firstAttribute="top" secondItem="2ty-1n-MOl" secondAttribute="bottom" constant="8" id="sBD-wb-nsh"/>
+                            <constraint firstItem="GFF-Wr-8sG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sDg-V2-zpw"/>
+                            <constraint firstItem="2ty-1n-MOl" firstAttribute="top" secondItem="iit-lw-YJL" secondAttribute="bottom" constant="8" id="xyi-m2-DWz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jL4-tk-xiI" appends="YES" id="tAb-Qr-RAg"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jL4-tk-xiI"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
