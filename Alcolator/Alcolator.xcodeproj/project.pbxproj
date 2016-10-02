@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4FC34D1DA1BA750057A43D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4FC34C1DA1BA750057A43D /* MainMenuViewController.m */; };
 		DCBB59A01D9AFE020082CC6C /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBB599F1D9AFE020082CC6C /* WhiskeyViewController.m */; };
 		DCF3947F1D95B203000B97F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3947E1D95B203000B97F3 /* main.m */; };
 		DCF394821D95B203000B97F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF394811D95B203000B97F3 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC4FC34B1DA1BA750057A43D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		DC4FC34C1DA1BA750057A43D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		DCBB599E1D9AFE020082CC6C /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
 		DCBB599F1D9AFE020082CC6C /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
 		DCF3947A1D95B203000B97F3 /* Alcolator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alcolator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +118,8 @@
 				DCF3947D1D95B203000B97F3 /* Supporting Files */,
 				DCBB599E1D9AFE020082CC6C /* WhiskeyViewController.h */,
 				DCBB599F1D9AFE020082CC6C /* WhiskeyViewController.m */,
+				DC4FC34B1DA1BA750057A43D /* MainMenuViewController.h */,
+				DC4FC34C1DA1BA750057A43D /* MainMenuViewController.m */,
 			);
 			path = Alcolator;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				DCBB59A01D9AFE020082CC6C /* WhiskeyViewController.m in Sources */,
 				DCF394821D95B203000B97F3 /* AppDelegate.m in Sources */,
 				DCF3947F1D95B203000B97F3 /* main.m in Sources */,
+				DC4FC34D1DA1BA750057A43D /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
