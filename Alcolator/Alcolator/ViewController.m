@@ -33,7 +33,7 @@
     }
 }
 - (IBAction)sliderValueDidChange:(UISlider *)sender {
-    NSLog(@"Slider value changed to %f", sender.value);
+    NSLog(@"Slider value changed to Beer %f", sender.value);
     [self.beerPercentTextField resignFirstResponder];
 }
 - (IBAction)buttonPressed:(UIButton *)sender {
