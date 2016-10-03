@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kqD-d7-gqp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DhU-k7-Ner">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -65,6 +65,7 @@
                             <outletCollection property="gestureRecognizers" destination="jL4-tk-xiI" appends="YES" id="tAb-Qr-RAg"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Wine" image="wine" id="QHr-jc-Mkd"/>
                     <navigationItem key="navigationItem" title="Wine" id="qWJ-Qn-4Ii"/>
                     <connections>
                         <outlet property="resultLabel" destination="ezg-bM-Ys5" id="ZxI-gy-gQ3"/>
@@ -134,6 +135,7 @@
                             <constraint firstItem="zwC-ik-7AN" firstAttribute="centerX" secondItem="nAg-x5-KyY" secondAttribute="centerX" constant="-6" id="wOg-yo-4Vr"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Whiskey" image="whiskey" id="8MY-dN-ajB"/>
                     <navigationItem key="navigationItem" title="Whiskey" id="mPl-VJ-PsS"/>
                     <connections>
                         <outlet property="resultLabel" destination="LtV-Nf-xHZ" id="Eoa-Q3-T6d"/>
@@ -191,6 +193,7 @@
                             <constraint firstItem="VKA-Dr-dhi" firstAttribute="top" secondItem="BkS-Wp-v0X" secondAttribute="bottom" constant="-6" id="oj7-Jk-fLe"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ujp-N5-hQm"/>
                     <navigationItem key="navigationItem" title="Select Alcolator" id="l71-E7-HTp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGx-9b-pBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,5 +218,31 @@
             </objects>
             <point key="canvasLocation" x="-2106" y="-4"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dQ5-eR-g5h">
+            <objects>
+                <tabBarController id="DhU-k7-Ner" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qRD-ie-ZKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mlI-5z-nsp" kind="relationship" relationship="viewControllers" id="EnP-px-SQk"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AbT-8h-JLa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shJ-Os-G2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106" y="637"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="whiskey" width="25" height="25"/>
+        <image name="wine" width="25" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AbT-8h-JLa"/>
+        <segue reference="EnP-px-SQk"/>
+    </inferredMetricsTieBreakers>
 </document>
